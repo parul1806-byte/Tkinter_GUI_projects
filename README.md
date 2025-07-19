@@ -1,44 +1,55 @@
 # Tkinter_GUI_projects
+# 🧰 Tkinter Mini Projects
 
-## 🧮 Tkinter GUI Calculator
-
-A simple calculator application built with **Python Tkinter** that performs basic arithmetic operations like addition, subtraction, multiplication, and division.
-
----
-
-## 📌 Features
-- GUI interface using `Tkinter`
-- Buttons for digits (0–9)
-- Operations: `+`, `-`, `*`, `/`
-- `Clear` and `=` buttons
-- Real-time input display
+This repository contains two beginner-friendly Python GUI projects using Tkinter.
 
 ---
 
-## 🖼️ Screenshot
+## 🔢 Project 1: Basic Calculator
 
-Here's how the calculator GUI looks:
+A simple calculator with:
 
-![Calculator Screenshot](https://github.com/user-attachments/assets/34ad8f03-0195-407f-a7b5-68e658103ad6)
+- Addition, subtraction, multiplication, division
+- Numeric and operator buttons
+- Clean layout using `grid()`
 
-> Image is hosted via GitHub's user-attachments.
+▶️ Run this file: `_basic_calculator.py`
 
 ---
 
-## 🛠️ Technologies Used
+## ⏰ Project 2: Digital Clock
+
+A live clock with:
+- Current time (12-hour format with AM/PM)
+- Day and date display
+- "Stop Clock" and "Restart Clock" button
+▶️ Run this file: `digital_clock.py`
+
+---
+
+## ✅ Requirements
 
 - Python 3.x
-- Tkinter (Python’s built-in GUI library)
+- Tkinter (pre-installed with Python)
 
 ---
 
-## 🚀 How to Run
+## 🧠 Key Concepts Covered
 
-### 1. Clone the repository
+- Tkinter layouts: `pack()`, `place()`, `grid()`
+- Button actions and `command`
+- Updating time with `after()` and `strftime()`
+- GUI design for beginners
 
-```
-git clone https://github.com/parul1806-byte/Tkinter_GUI_projects.git
-cd Tkinter_GUI_projects
-```
-2. Run the Calculator
-python basic_calculator.py
+---
+
+## 👩‍💻 Created By
+
+**Parul Pal**  
+🔗 [GitHub: parul1806](https://github.com/parul1806)
+
+---
+
+## 📄 License
+
+Free to use for learning and personal practice.
