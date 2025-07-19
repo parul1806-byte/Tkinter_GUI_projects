@@ -1,0 +1,56 @@
+# impot tkinter
+from time import strftime
+from tkinter import*
+
+import time
+
+#creating the main window
+window = Tk()
+window.title("DIGITAL_CLOCK")
+window.geometry("500x500")
+window.config(bg="black")
+
+#inputs
+clock_label = Label(window, text="DIGITAL_CLOCK",font=("Arial",40,"bold"),bg="black",fg="cyan")
+clock_label1 = Label(window , font=("Arial",40,"bold"),bg="black",fg="cyan")
+clock_label2 = Label(window,font=("Arial",20,"bold"),bg="black",fg="cyan")
+clock_label3 =Label(window,font=("Arial",20,"bold"),bg="black",fg="cyan")
+clock_label.pack(pady=40)
+clock_label1.pack(pady=40)
+clock_label2.pack()
+clock_label3.pack()
+
+button1 = Button(window,text="stop clock",bg='red',command=lambda :stop_clock())
+button1.place(x=160,y=400)
+button2 = Button(window,text="restart_clock",bg='red',command=lambda :restart_clock())
+button2.place(x=260,y=400)
+#function to update the time
+def update_time():
+    global clock_id
+    current_time = strftime("%I:%M:%S:%p")# AM/PM 12 hr format
+    clock_label1.configure( text=current_time)
+    clock_id = window.after(1000,update_time)# this after key run the update time function after every sec to udate the time
+def update_date():
+    global date_id
+    current_date = strftime('%d:%b:%y')
+    current_day = strftime('%A')
+    clock_label2.configure(text=current_date)
+    clock_label3.configure(text=current_day)
+    date_id =  window.after(1000,update_date)
+
+def stop_clock():
+    global clock_id,date_id
+    if clock_id:
+        window.after_cancel(clock_id)
+        clock_id = None
+    if date_id:
+        window.after_cancel(date_id)
+        date_id=None
+
+def restart_clock():
+    update_time()
+    update_date()
+#running the gui window
+update_time()
+update_date()
+window.mainloop()
