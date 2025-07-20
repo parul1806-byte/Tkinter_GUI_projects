@@ -42,6 +42,34 @@ A live clock with:
 - GUI design for beginners
 
 ---
+3 # 📝 Daily Habit Tracker with Streaks (Tkinter App)
+
+A simple Python GUI app that helps you track your daily habits and maintain a streak!  
+Built using the `Tkinter` module (no external libraries required).
+
+---
+
+## 🚀 Features
+
+- ✅ 7 customizable daily habit checkboxes
+- 🗓️ Automatically displays current date and time
+- 💾 "Save Progress" button to record daily habits
+- 🔥 Streak tracker (increases if you log progress every consecutive day)
+- ⚠️ Reminds you if no habit is completed
+- 🎨 Colorful and easy-to-use GUI interface
+
+---
+
+## 🛠️ How It Works
+
+- Select the habits you've completed for the day using checkboxes.
+- Click on the **"Save Today's Progress"** button.
+- The app will:
+  - Store the date and streak in a file called `streak.txt`
+  - Show a success message with the number of habits done and your current streak
+- If you don’t complete any habits, it will show a warning.
+
+---
 
 ## 👩‍💻 Created By
 
