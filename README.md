@@ -74,7 +74,7 @@ Built using the `Tkinter` module (no external libraries required).
 ## 👩‍💻 Created By
 
 **Parul Pal**  
-🔗 [GitHub:https://github.com/parul1806-byte](https://github.com/parul1806)
+🔗 [GitHub:parul1806-byte]
 
 ---
 
